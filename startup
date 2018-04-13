@@ -5,7 +5,7 @@ xdotool key ctrl+alt+t
 
 sleep 1
 
-xdotool key alt+End
+xdotool key alt+End  # alt+End is the hotkey to move window to right hand side
 
 # Open browser
 xdotool key ctrl+Escape
