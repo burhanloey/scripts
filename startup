@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+# XFCE: To run at startup, open `Settings Manager` > `System` >
+#     `Session and Startup` > `Application Autostart`. Then, add entry
+#     for this script.
+
 xfce4-terminal &
 
 firefox &
