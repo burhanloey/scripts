@@ -1,28 +1,7 @@
 #!/usr/bin/env bash
 
-# Open terminal
-xdotool key ctrl+alt+t
+xfce4-terminal &
 
-sleep 1
+firefox &
 
-xdotool key alt+End  # alt+End is the hotkey to move window to right hand side
-
-# Open browser
-xdotool key ctrl+Escape
-
-sleep 1
-
-xdotool type 'firefox'
-
-xdotool key KP_Enter
-
-sleep 1
-
-# Open Emacs GUI
-xdotool key ctrl+Escape
-
-sleep 1
-
-xdotool type 'emacs'
-
-xdotool key KP_Enter
+emacs &
