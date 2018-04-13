@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+
+# A script to set image permissions for Firefox Quantum.
+#
+# Usage:
+#   toggle-img-display [VALUE]
+#
+# VALUE - The value to set to; 1 (default) to display image, 2 to disable image
+#
+# Requirement:
+#   - xdotool
+
+SLEEP_DURATION=1
+
+xdotool key alt+Tab
+
+sleep $SLEEP_DURATION
+
+xdotool key ctrl+t
+
+sleep $SLEEP_DURATION
+
+xdotool key ctrl+l type 'about:config'
+
+xdotool key KP_Enter
+
+sleep $SLEEP_DURATION
+
+xdotool key KP_Enter
+
+sleep $SLEEP_DURATION
+
+xdotool type 'permissions.default.image'
+
+sleep $SLEEP_DURATION
+
+xdotool key Tab key Down key Up key KP_Enter
+
+sleep $SLEEP_DURATION
+
+xdotool key $1 key KP_Enter key ctrl+w
