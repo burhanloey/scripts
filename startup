@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+# Open terminal
+xdotool key ctrl+alt+t
+
+sleep 1
+
+xdotool key alt+End
+
+# Open browser
+xdotool key ctrl+Escape
+
+sleep 1
+
+xdotool type 'firefox'
+
+xdotool key KP_Enter
+
+sleep 1
+
+# Open Emacs GUI
+xdotool key ctrl+Escape
+
+sleep 1
+
+xdotool type 'emacs'
+
+xdotool key KP_Enter
